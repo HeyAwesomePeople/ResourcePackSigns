@@ -54,7 +54,6 @@ public class ResourcePackSigns extends JavaPlugin implements Listener {
 
             if (s.getLine(0) == null) return;
             if (ChatColor.stripColor(s.getLine(0)).equals(ChatColor.stripColor(ChatColor.translateAlternateColorCodes('&', getConfig().getString("text"))))) {
-                Bukkit.broadcastMessage("7");
                 e.getPlayer().setResourcePack(this.getResource());
             }
         }
